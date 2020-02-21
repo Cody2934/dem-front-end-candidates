@@ -1,0 +1,77 @@
+* {
+    color: black;
+    background-color: blue;
+  }
+
+h1 {
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px black;
+    font-family: fantasy;
+}
+
+.mainDiv {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+    text-align: center;
+}
+
+header {
+    background-color: transparent;
+    font-family: cursive;
+    text-transform: capitalize;
+    background-color: gray;
+    margin: 1px;
+    margin: auto;
+}
+
+
+.thePoke {
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    background-color: gray;
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 17px;
+    box-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pokeName {
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: black;
+    background-color: gray;
+    margin: 5px;
+}
+
+.pokePics {
+    height: 250px;
+    width: 350px;
+    background: white;
+}
+
+.pokeInfo {
+    font-family: cursive;
+    text-transform: capitalize;
+    background-color: gray;
+    margin: auto;
+  }
+
+  h6 {
+      color: crimson;
+  }
+
+  #searchStuff {
+    text-align: center;
+    background-color: transparent;
+    font-family: cursive;
+    text-transform: capitalize;
+    margin: 1px;
+    margin: auto; 
+  }
