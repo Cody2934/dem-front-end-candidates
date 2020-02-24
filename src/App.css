@@ -30,7 +30,7 @@ header {
 }
 
 
-.thePoke {
+.theCandi {
     text-align: center;
     border-style: solid;
     border-color: black;
@@ -42,21 +42,21 @@ header {
     box-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.pokeName {
+/* .pokeName {
     text-transform: capitalize;
     text-decoration: underline;
     color: black;
     background-color: gray;
     margin: 5px;
-}
+} */
 
-.pokePics {
+.candiPics {
     height: 250px;
     width: 350px;
     background: white;
 }
 
-.pokeInfo {
+.candiInfo {
     font-family: cursive;
     text-transform: capitalize;
     background-color: gray;
@@ -74,4 +74,8 @@ header {
     text-transform: capitalize;
     margin: 1px;
     margin: auto; 
+  }
+
+  select {
+      background-color: white;
   }

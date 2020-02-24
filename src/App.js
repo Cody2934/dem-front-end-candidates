@@ -8,7 +8,7 @@ import getCandidates from './CandidateApi';
 export default class App extends Component {
     state = { candidatesData: [] }
     async loadCandidates() {
-        const response = await getCandidates();
+        const response = await getCandidates(`https://thawing-everglades-40599.herokuapp.com/`);
         console.log(response)
         const candidatesData = response;
         this.setState({

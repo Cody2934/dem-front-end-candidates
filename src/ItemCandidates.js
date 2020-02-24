@@ -3,22 +3,22 @@ import React, { Component } from 'react'
 export default class ItemCandidates extends Component {
     render() {
         return (
-            <div className="thePoke">
+            <div className="theCandi">
 
                 {/* candidates Image */}
-                <img className="pokePics" src={this.props.candidates.img}/>
+                <img className="candiPics" src={this.props.candidates.img} alt="person"/>
 
                 {/* candidates Born */}
-                <p className="pokeInfo">Born: {this.props.candidates.born}</p>
+                <p className="candiInfo">Born: {this.props.candidates.born}</p>
 
                 {/* candidates Running */}
-                {/* <p className="pokeInfo">Still Running? {this.props.candidates.running}</p> */}
+                {/* <p className="candiInfo">Still Running? {this.props.candidates.running}</p> */}
 
                 {/* candidates Identity */}
-                <p className="pokeInfo">Identity: {this.props.candidates.identity}</p>
+                {/* <p className="candiInfo">Identity: {this.props.candidates.identity}</p> */}
 
                 {/* candidates Name */}
-                <p className="pokeInfo">Name: {this.props.candidates.name}</p>
+                <p className="candiInfo">Name: {this.props.candidates.name}</p>
                 
             </div>
         )
