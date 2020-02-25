@@ -5,7 +5,8 @@ import ItemCandidates from './ItemCandidates.js';
 export default class Details extends Component {
     state = { candidate: {} }
     async componentDidMount() {
-        const data = await getCandidates(this.props.match.params.candidateId);
+        console.log(this.props.match.params)
+        const data = await getCandidates(this.props.match.params.item.id);
         if (data.response) {
         this.setState({ candidate: data.response[0] })
         }

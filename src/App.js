@@ -1,3 +1,6 @@
+// changing params from searching by ID to By Name. Might run into some url problems due to it putting % in the spacing.
+// ListCandidates Line #19 has a bad URL
+
 import React, { Component } from 'react'
 import ListCandidates from './ListCandidates'
 import Header from './Header.js';
@@ -7,6 +10,7 @@ import { Link, Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Details from './Details.js';
 import PickMe from './PickMe.js';
 import SearchOptions from './SearchOptions.js';
+import NoMatch from './NoMatch.js';
 
 import './App.css';
 
@@ -39,6 +43,7 @@ export default class App extends Component {
                 <Switch>
                     <Route exact path="api/candidates/:candidateId" component={Details} />
                     <Route exact path="/Pick-Me/a" component={PickMe} />
+                    <Route component={NoMatch} />
                 </Switch>
                 <Header />
                 <SearchOptions />
@@ -50,3 +55,4 @@ export default class App extends Component {
         )
     }
 }
+
