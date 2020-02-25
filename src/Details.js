@@ -6,7 +6,7 @@ export default class Details extends Component {
     state = { candidate: {} }
     async componentDidMount() {
         const data = await getCandidatesById(this.props.match.params.candidateId);
-        console.log(data)
+        // console.log(data)
         if (data) {
         this.setState({ candidate: data[0] })
         }
@@ -17,6 +17,8 @@ export default class Details extends Component {
         // console.log(this.state)
         return (
             <div>
+                <br></br>
+                <h5>IS THIS THE NEXT POTUS?</h5>
                 {candidate && <ItemCandidates candidates={ candidate } />}
             </div>
       );

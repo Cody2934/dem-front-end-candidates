@@ -1,5 +1,5 @@
 * {
-    color: black;
+    color: white;
     /* background-image: linear-gradient(to right, red,white,blue); */
     background-color: blue;
   }
@@ -29,14 +29,11 @@ header {
     margin: auto;
 }
 
-
 .theCandi {
     text-align: center;
     border-style: solid;
     border-color: black;
     background-image: linear-gradient(to right, red,white,blue);
-
-    /* background-color: gray; */
     padding: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -66,6 +63,8 @@ header {
     background-color: lightgray;
     margin: auto;
     font-size: larger;
+    color: black;
+    font-size: x-large;
   }
 
   h6 {
@@ -82,5 +81,30 @@ header {
   }
 
   select {
+      color: black;
       background-color: white;
+  }
+
+
+  #home {
+      color: royalblue;
+  }
+
+  #president {
+      color: red;
+      float: right;
+  }
+
+  h5 {
+    color: black;
+    font-size: large;
+    text-align: center;
+    letter-spacing: 7px;
+    line-height: .4;
+    word-spacing: 5px;
+    text-shadow: 0 0 3px red;
+  }
+
+  #makePres {
+    text-align: center;
   }

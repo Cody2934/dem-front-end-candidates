@@ -3,6 +3,7 @@ import request from 'superagent';
 export default class PickMe extends Component {
     state = {
         types: [],
+        born: 69,
         running: true,
         type: 1,
     };
@@ -32,13 +33,13 @@ export default class PickMe extends Component {
             born: this.state.born
         }
         const dbCandidate = await request.post('https://thawing-everglades-40599.herokuapp.com/api/candidates', newCandidate);
-        console.log(dbCandidate)
         this.props.history.push('/');
+        console.log(dbCandidate)
     }
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} id="makePres">
                     !USA Start Your Super PAC USA!
                     <br/>
                     <label>

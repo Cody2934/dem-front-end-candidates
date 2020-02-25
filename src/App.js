@@ -29,18 +29,16 @@ export default class App extends Component {
         return (
             <Router>
                 <div>
-                    <Link to="/">Back to the Motherland</Link>
+                    <Header />
                     <br></br>
-                    <Link to="/Pick-Me">Run for President</Link>
                     <div>
+                        {/* <SearchOptions /> */}
                     <Switch>
                         <Route exact path="/" render={(candidatesData) => <ListCandidates candidates={candidatesData} isAuthed={true} />} />
                         <Route path="/candidates/:candidateId" component={Details} />
-                        <Route exact path="/Pick-Me/a" component={PickMe} />
+                        <Route exact path="/Pick-Me/" component={PickMe} />
                         <Route component={NoMatch} />
                     </Switch>
-                    <SearchOptions />
-                    <Header />
                     <Footer />
                     </div>
                 </div>
